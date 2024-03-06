@@ -4,7 +4,7 @@
 
 %%
 
-[A-Z]+    { printf("Capital word: %s\n", yytext); }
+[A-Z]+    { printf("enter the text: %s\n", yytext); }
 
 .         ;
 
