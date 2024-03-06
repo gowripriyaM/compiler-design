@@ -1,0 +1,16 @@
+%{
+#include <stdio.h>
+%}
+
+%%
+
+[A-Z]+    { printf("enter the text: %s\n", yytext); }
+
+.         ;
+
+%%
+
+int main() {
+    yylex();
+    return 0;
+}
